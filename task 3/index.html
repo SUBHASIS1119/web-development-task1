@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form a Story</title>
+    
+</head>
+<body>
+    <hr>
+    <form action="story.html" method="GET">
+        <label for="animal-1">Animal:</label>
+        <input type="text" id="animal-1" name="animal-1" placeholder="eg.Lion" required>
+        <br><br>
+        
+        <label for="animal-2">Another Animal:</label>
+        <input type="text" id="animal-2" name="animal-2" placeholder="eg.Tiger" required>
+        <br><br>
+
+        <label for="animal-2">One More Animal:</label>
+        <input type="text" id="animal-3" name="animal-3" placeholder="eg.elephant" required>
+        <br><br>
+
+        <lebel for="adj-1">Adjective (past tense):</lebel>
+        <input type="text" id="adj-1" name="adj-1" required>
+        <br><br>
+
+        <lebel for="verb-1">Verb (ends in -ing):</lebel>
+        <input type="text" id="verb-1" name="verb-1" required>
+        <br><br>
+
+        <lebel for="num-1">Number:</lebel>
+        <input type="number" id="num-1" name="num-1" placeholder="123" required>
+        <br><br>
+
+        <span> Yes or No:</span>
+        <input id="yes" type="radio" name="answer" value="Yes" required>
+        <lebel for="yes">Yes</lebel>
+
+        <input id="no" type="radio" name="answer" value="no" required>
+        <lebel for="no">No</lebel>
+        <br><br>
+
+        <lebel for="speed">Relative speed (ends in -er):</lebel>
+        <select id="speed" name="speed">
+            <option value="faster">Faster</option>
+            <option value="medium">Medium</option>
+            <option value="slower">Slower</option>
+        </select>
+        <br><br>
+
+        <lebel for="quote">Motivational Quote:</lebel>
+        <input id="quote" name="quote" type="text" required list="quote-choices">
+        <datalist id="quote-choices">
+            <option value="patience is art of hoping"></option>
+            <option value="instruction does much,but encouragement does everything"></option>
+            <option value="Success is the sum of small efforts "></option>
+        </datalist>
+        <br><br>
+
+        <lebel for="message"> Meaningful Message:</lebel>
+        <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+        <br><br>
+
+        
+        <input type="submit" value="Form My Story!">
+    </form>
+</body>
+</html>
